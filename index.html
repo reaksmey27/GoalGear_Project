@@ -2,97 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goal Gear</title>
-    <link rel="stylesheet" href="/style/main.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Gear</title>
+  <link rel="stylesheet" href="/style/main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0&" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <img src="/images/logo.png" alt="Logo">
-        <ul>
-            <li><a href="#home" class="active">HOME</a></li>
-            <li><a href="#shop">SHOP</a></li>
-            <li><a href="#collection">COLLECTION</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <img class="user" src="/images/user.png" alt="user">
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="/images/logo.png" alt="Logo">
+    <ul>
+      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="#shop">SHOP</a></li>
+      <li><a href="#collection">COLLECTION</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="profile">
+      <span class="material-symbols-outlined">
+        shopping_cart
+      </span>
+      <img class="user" src="/images/user.png" alt="user">
+    </div>
+  </nav>
 
-    <!--Home page -->
-    <section id="home">
-        <div class="home">
-            <div class="home-info">
-                <h1>We're GOAL GEAR</h1>
-                <h2>We sell
-                    <span style="--i:4;" data-text="Soccer Ball">Soccer Balls</span>
-                    <span style="--i:3;" data-text="Soccer Boots">Soccer Boots</span>
-                    <span style="--i:2;" data-text="Soccer Jersey">Soccer Jerseys</span>
-                    <span style="--i:1;" data-text="Goalkeeper Gloves">Goalkeeper Gloves</span>
-                </h2>
-                <p> We provide quality soccer balls, boots, jerseys, and training gear for players and fans, keeping
-                    everyone ready for the game.
-                </p>
-                <div class="btn-sci">
-                    <a href="#" class="btn">SHOP NOW</a>
-                    <a href="#" class="btn secondary">VIEW COLLECTION</a>
-                    <div class="sci">
-                        <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                        <a href="#" target="_blank"><i class='bx bxl-telegram'></i></a>
-                        <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="home-img">
-                <div class="img-box">
-                    <div class="img-item">
-                        <img src="images/man.png" alt="man">
-                    </div>
-                </div>
-            </div>
+  <!--Home page -->
+  <section id="home">
+    <div class="home">
+      <div class="home-info">
+        <h1>We're GOAL GEAR</h1>
+        <h2>We sell
+          <span style="--i:4;" data-text="Soccer Ball">Soccer Balls</span>
+          <span style="--i:3;" data-text="Soccer Boots">Soccer Boots</span>
+          <span style="--i:2;" data-text="Soccer Jersey">Soccer Jerseys</span>
+          <span style="--i:1;" data-text="Goalkeeper Gloves">Goalkeeper Gloves</span>
+        </h2>
+        <p> We provide quality soccer balls, boots, jerseys, and training gear for players and fans, keeping
+          everyone ready for the game.
+        </p>
+        <div class="btn-sci">
+          <a href="#" class="btn">SHOP NOW</a>
+          <a href="#" class="btn secondary">VIEW COLLECTION</a>
+          <div class="sci">
+            <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-telegram'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+          </div>
         </div>
-        <div class="featured">
-            <h2>Featured Products</h2>
-            <div class="product-gallery">
-                <div class="product-item">
-                    <img src="images/barcelona.png" alt="Jersey">
-                    <div class="product-title">Barcelona Home</div>
-                    <div class="product-price">$49.99</div>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/boot.png" alt="soccer boot">
-                    <div class="product-title">Addidas F50</div>
-                    <div class="product-price">$94.99</div>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/ucl-ball.png" alt="ball">
-                    <div class="product-title">UCL Ball</div>
-                    <div class="product-price">$29.99</div>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-                <div class="product-item">
-                    <img src="images/gloves.png" alt="goalkeeper gloves">
-                    <div class="product-title">Goalkeeper Gloves</div>
-                    <div class="product-price">$39.99</div>
-                    <button class="buy-btn">Buy Now</button>
-                </div>
-            </div>
+      </div>
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="images/man.png" alt="man">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured">
+      <h2>Featured Products</h2>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="images/barcelona.png" alt="Jersey">
+          <div class="product-title">Barcelona Home</div>
+          <div class="product-price">$49.99</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-item">
+          <img src="images/boot.png" alt="soccer boot">
+          <div class="product-title">Addidas F50</div>
+          <div class="product-price">$94.99</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-item">
+          <img src="images/ucl-ball.png" alt="ball">
+          <div class="product-title">UCL Ball</div>
+          <div class="product-price">$29.99</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-item">
+          <img src="images/gloves.png" alt="goalkeeper gloves">
+          <div class="product-title">Goalkeeper Gloves</div>
+          <div class="product-price">$39.99</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
 
+    </div>
+    <div class="discount-banner">
+      <div class="discount-track">
+
+        <div class="discount-slide">
+          <span>🔥 10% OFF your first order!</span>
         </div>
-        <div class="promotions">
-            <div class="container">
-                <h2>Special Offers</h2>
-                <p>Get 10% off your first order! Limited time only.</p>
-                <a href="#" class="btn">Shop Now</a>
-            </div>
+
+        <div class="discount-slide">
+          <span>🎉 Buy 1 Get 1 Free – Limited Time!</span>
         </div>
-    </section>
+
+        <div class="discount-slide">
+          <span>🚚 Free Shipping on orders over $50</span>
+        </div>
+        <div class="discount-slide">
+          <span>🔥 10% OFF your first order!</span>
+        </div>
+
+        <div class="discount-slide">
+          <span>🎉 Buy 1 Get 1 Free – Limited Time!</span>
+        </div>
+
+        <div class="discount-slide">
+          <span>🚚 Free Shipping on orders over $50</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="promo-slider-loop">
+      <div class="promo-track">
+        <div class="slide">
+          <img src="/images/banner1.png" alt="Discount 1">
+        </div>
+        <div class="slide">
+          <img src="/images/banner2.png" alt="Discount 2">
+        </div>
+        <div class="slide">
+          <img src="/images/banner3.png" alt="Discount 3">
+        </div>
+        <div class="slide">
+          <img src="/images/banner4.png" alt="Discount 1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About page -->
+  <section id="shop">
+
+  </section>
 </body>
 
 </html>
