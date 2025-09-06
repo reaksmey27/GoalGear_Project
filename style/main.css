@@ -1,87 +1,273 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-  background:
-    url(/images/barca.png) no-repeat center center,
-    linear-gradient(90deg, #0c0d2bad, #3E1F92, #2e176ec2);
-  background-attachment: fixed;
-  background-size: 300px, cover;
+    background: radial-gradient(circle at top left, #1f242d, #12151d);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 30px;
-  background: linear-gradient(90deg, #004D98, #A50044, #3E1F92);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  box-shadow: 0 4px 15px rgba(0, 8, 16, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background: linear-gradient(90deg, #004D98, #A50044, #3E1F92);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 8, 16, 0.6);
 }
 
 .navbar img {
-  max-width: 60px;
+    max-width: 50px;
 }
 
 .navbar .user {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .navbar ul {
-  display: flex;
-  gap: 40px;
-  align-items: center;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .navbar ul li {
-  list-style: none;
+    list-style: none;
 }
 
 .navbar ul li a {
-  position: relative;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: #EDBB00;
-  transition: color 0.3s ease, transform 0.3s ease;
-  padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #EDBB00;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 5px 0;
 }
 
 .navbar ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 3px;
-  background: #EDBB00;
-  transition: width 0.3s ease;
-  border-radius: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #EDBB00;
+    transition: width 0.3s ease;
+    border-radius: 2px;
 }
 
 .navbar ul li a:hover {
-  color: #fff;
-  transform: scale(1.1);
+    color: #fff;
+    transform: scale(1.1);
 }
 
 .navbar ul li a:hover::after {
-  width: 100%;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+.home-info h1 {
+    font-size: 55px;
+}
+
+.home-info h2 {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+.home-info h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #EDBB00;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+.home-info h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid#EDBB00;
+    color: #EDBB00;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 38px;
+    background-color: #EDBB00;
+    border: 2px solid #EDBB00;
+    border-radius: 40px;
+    box-shadow: 0 0 18px #EDBB00;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #EDBB00;
+    box-shadow: none;
+}
+
+.home-info .btn-sci .btn {
+    text-decoration: none;
+    color: white;
+}
+
+.home-info .btn-sci .sci {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid#EDBB00;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#EDBB00;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.home-info .btn-sci .sci a:hover {
+    background:#EDBB00;
+    color: #1f242d;
+    box-shadow: 0 0 10px#EDBB00;
+}
+
+.home-img .img-box {
+     width: 500px; 
+    height: 500px;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #1f242d;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from var(--angle), transparent 50%,#EDBB00);
+    border-radius: 50%;
+    animation: rotate-border 5s linear infinite;
+    z-index: -1;
+}
+
+.img-box::before {
+    filter: blur(5px);
+    padding: 8px;
+    box-shadow: 0px 0p 10px pink;
+    opacity: 0.5;
+}
+
+@keyframes rotate-border {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, #1f242d, #12151d);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: 2;
 }
